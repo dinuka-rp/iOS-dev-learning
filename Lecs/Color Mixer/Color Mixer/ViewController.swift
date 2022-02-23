@@ -9,16 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var redVal  = 0
-    var greenVal = 0
-    var blueVal = 0
+    var redVal:Float  = 0
+    var greenVal:Float = 0
+    var blueVal:Float = 0
     
     @IBOutlet weak var colorMixerView: UIView!
 
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
 
+    @IBOutlet weak var valuesLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        redVal = redSlider.value
+        greenVal = greenSlider.value
+        blueVal = blueSlider.value
     }
 
     @IBAction func ButtonClick(_ sender: UIButton) {
@@ -31,22 +40,43 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func RedPicker(_ sender: UISlider) {
-        redVal = Int(round(sender.value))
-//        print("red value: \(redVal)")
-        UpdateColorView()
-    }
+    //    @IBAction func RedPicker(_ sender: UISlider) {
+//        redVal = Int(round(sender.value))
+////        print("red value: \(redVal)")
+//        UpdateColorView()
+//    }
+//
+//    @IBAction func GreenPicker(_ sender: UISlider) {
+//        greenVal = Int(round(sender.value))
+////        print("red value: \(greenVal)")
+//        UpdateColorView()
+//    }
+//
+//    @IBAction func BluePicker(_ sender: UISlider) {
+//        blueVal = Int(round(sender.value))
+////        print("red value: \(blueVal)")
+//        UpdateColorView()
+//    }
     
-    @IBAction func GreenPicker(_ sender: UISlider) {
-        greenVal = Int(round(sender.value))
-//        print("red value: \(greenVal)")
-        UpdateColorView()
-    }
     
-    @IBAction func BluePicker(_ sender: UISlider) {
-        blueVal = Int(round(sender.value))
-//        print("red value: \(blueVal)")
-        UpdateColorView()
+    @IBAction func didChangeSlider(_ sender: UISlider) {
+        let tag = sender.tag
+        
+        switch tag {
+        case 1:
+            redVal = sender.value
+            UpdateColorView()
+        case 2:
+            greenVal = sender.value
+            UpdateColorView()
+        case 3:
+            blueVal = sender.value
+            UpdateColorView()
+        default: break
+//            do nothing
+        }
+        
+        valuesLabel.text = "\(Int(redVal)), \(Int(greenVal)), \(Int(blueVal))"
     }
     
     func UpdateColorView() {
@@ -56,7 +86,7 @@ class ViewController: UIViewController {
             blue: CGFloat(blueVal) / 255.0,
             alpha: CGFloat(1.0)
         )
-//        division by 255.0 isn't necessary since the slider scale is only upto 255
+//        CGFloat can only have values between 0 and 255
         
         colorMixerView.backgroundColor = newUIColor
 //        view.backgroundColor = UIColorFromRGB()
