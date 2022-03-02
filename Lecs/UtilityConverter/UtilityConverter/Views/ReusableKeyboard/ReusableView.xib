@@ -26,6 +26,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="1">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="ydF-Qc-iCF"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQz-VG-iJv">
                                     <rect key="frame" x="135.5" y="0.0" width="127" height="65"/>
@@ -33,6 +36,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="2">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="5Ft-nH-Sin"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmP-jG-OTk">
                                     <rect key="frame" x="270.5" y="0.0" width="127.5" height="65"/>
@@ -40,6 +46,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="3">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="xE8-Go-B8C"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -52,6 +61,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="4">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="YWn-Oz-Uka"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a9-pY-cSu">
                                     <rect key="frame" x="135.5" y="0.0" width="127" height="65"/>
@@ -59,6 +71,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="5">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="dE1-2R-odY"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPE-85-wYg">
                                     <rect key="frame" x="270.5" y="0.0" width="127.5" height="65"/>
@@ -66,6 +81,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="6">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="Y90-Ji-J1t"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -78,6 +96,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="7">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="XkA-WQ-2ll"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ka-xy-i2h">
                                     <rect key="frame" x="135.5" y="0.0" width="127" height="65"/>
@@ -85,6 +106,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="8">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="XKz-g5-PSh"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-TJ-hLb">
                                     <rect key="frame" x="270.5" y="0.0" width="127.5" height="65"/>
@@ -92,6 +116,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="9">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="sKf-xy-uVM"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -104,6 +131,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title=".">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNegDec:" destination="-1" eventType="touchUpInside" id="vxN-st-jB5"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soo-y2-urv">
                                     <rect key="frame" x="135.5" y="0.0" width="127" height="65"/>
@@ -111,6 +141,9 @@
                                     <buttonConfiguration key="configuration" style="tinted" title="0">
                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="25"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="didPressNumber:" destination="-1" eventType="touchUpInside" id="LyX-D5-Udq"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="jig-2r-wQd">
                                     <rect key="frame" x="270.5" y="0.0" width="127.5" height="65"/>
@@ -119,11 +152,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="127.5" height="29.5"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="tinted" image="delete.left.fill" catalog="system" title=""/>
+                                            <connections>
+                                                <action selector="didPressDelete:" destination="-1" eventType="touchUpInside" id="O3S-R9-Lf4"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vf-Xe-lwF">
                                             <rect key="frame" x="0.0" y="35.5" width="127.5" height="29.5"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="tinted" title="-"/>
+                                            <connections>
+                                                <action selector="didPressNegDec:" destination="-1" eventType="touchUpInside" id="72B-yk-1h0"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>

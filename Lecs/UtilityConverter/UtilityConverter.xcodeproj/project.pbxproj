@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CBDE0AA27CF3B3A00CB2FEE /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBDE0A927CF3B3A00CB2FEE /* LandingViewController.swift */; };
 		9CDC944927CF1C1D00D167A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC944827CF1C1D00D167A1 /* AppDelegate.swift */; };
 		9CDC944B27CF1C1D00D167A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC944A27CF1C1D00D167A1 /* SceneDelegate.swift */; };
 		9CDC944D27CF1C1D00D167A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC944C27CF1C1D00D167A1 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CBDE0A927CF3B3A00CB2FEE /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		9CDC944527CF1C1D00D167A1 /* UtilityConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtilityConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CDC944827CF1C1D00D167A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CDC944A27CF1C1D00D167A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9CDC944C27CF1C1D00D167A1 /* ViewController.swift */,
+				9CBDE0A927CF3B3A00CB2FEE /* LandingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				9CDC944D27CF1C1D00D167A1 /* ViewController.swift in Sources */,
 				9CDC944927CF1C1D00D167A1 /* AppDelegate.swift in Sources */,
 				9CDC944B27CF1C1D00D167A1 /* SceneDelegate.swift in Sources */,
+				9CBDE0AA27CF3B3A00CB2FEE /* LandingViewController.swift in Sources */,
 				9CDC946327CF1D2000D167A1 /* ReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
