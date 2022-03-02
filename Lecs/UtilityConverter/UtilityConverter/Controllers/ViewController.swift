@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  TriangleAreaCalculator
+//  UtilityConverter
 //
-//  Created by Dinuka Piyadigama on 2022-02-23.
+//  Created by Dinuka Piyadigama on 2022-03-02.
 //
 
 import UIKit

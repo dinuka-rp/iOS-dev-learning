@@ -7,27 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CA6225527C5FFAC007BC986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6225427C5FFAC007BC986 /* AppDelegate.swift */; };
-		9CA6225727C5FFAC007BC986 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6225627C5FFAC007BC986 /* SceneDelegate.swift */; };
-		9CA6225927C5FFAC007BC986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6225827C5FFAC007BC986 /* ViewController.swift */; };
-		9CA6225C27C5FFAC007BC986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6225A27C5FFAC007BC986 /* Main.storyboard */; };
-		9CA6225E27C5FFAD007BC986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6225D27C5FFAD007BC986 /* Assets.xcassets */; };
-		9CA6226127C5FFAD007BC986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6225F27C5FFAD007BC986 /* LaunchScreen.storyboard */; };
+		9CDC944927CF1C1D00D167A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC944827CF1C1D00D167A1 /* AppDelegate.swift */; };
+		9CDC944B27CF1C1D00D167A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC944A27CF1C1D00D167A1 /* SceneDelegate.swift */; };
+		9CDC944D27CF1C1D00D167A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC944C27CF1C1D00D167A1 /* ViewController.swift */; };
+		9CDC945027CF1C1D00D167A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC944E27CF1C1D00D167A1 /* Main.storyboard */; };
+		9CDC945227CF1C1D00D167A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC945127CF1C1D00D167A1 /* Assets.xcassets */; };
+		9CDC945527CF1C1D00D167A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC945327CF1C1D00D167A1 /* LaunchScreen.storyboard */; };
+		9CDC946327CF1D2000D167A1 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDC946227CF1D2000D167A1 /* ReusableView.swift */; };
+		9CDC946527CF1D6D00D167A1 /* ReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CDC946427CF1D6D00D167A1 /* ReusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9CA6225127C5FFAC007BC986 /* TriangleAreaCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriangleAreaCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA6225427C5FFAC007BC986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CA6225627C5FFAC007BC986 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CA6225827C5FFAC007BC986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CA6225B27C5FFAC007BC986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CA6225D27C5FFAD007BC986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CA6226027C5FFAD007BC986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9CA6226227C5FFAD007BC986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDC944527CF1C1D00D167A1 /* UtilityConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UtilityConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CDC944827CF1C1D00D167A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CDC944A27CF1C1D00D167A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CDC944C27CF1C1D00D167A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CDC944F27CF1C1D00D167A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CDC945127CF1C1D00D167A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CDC945427CF1C1D00D167A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CDC945627CF1C1D00D167A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CDC946227CF1D2000D167A1 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		9CDC946427CF1D6D00D167A1 /* ReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9CA6224E27C5FFAC007BC986 /* Frameworks */ = {
+		9CDC944227CF1C1D00D167A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +41,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9CA6224827C5FFAC007BC986 = {
+		9CDC943C27CF1C1D00D167A1 = {
 			isa = PBXGroup;
 			children = (
-				9CA6225327C5FFAC007BC986 /* TriangleAreaCalculator */,
-				9CA6225227C5FFAC007BC986 /* Products */,
+				9CDC944727CF1C1D00D167A1 /* UtilityConverter */,
+				9CDC944627CF1C1D00D167A1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9CA6225227C5FFAC007BC986 /* Products */ = {
+		9CDC944627CF1C1D00D167A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CA6225127C5FFAC007BC986 /* TriangleAreaCalculator.app */,
+				9CDC944527CF1C1D00D167A1 /* UtilityConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CA6225327C5FFAC007BC986 /* TriangleAreaCalculator */ = {
+		9CDC944727CF1C1D00D167A1 /* UtilityConverter */ = {
 			isa = PBXGroup;
 			children = (
-				9CA6225427C5FFAC007BC986 /* AppDelegate.swift */,
-				9CA6225627C5FFAC007BC986 /* SceneDelegate.swift */,
-				9CA6225827C5FFAC007BC986 /* ViewController.swift */,
-				9CA6225A27C5FFAC007BC986 /* Main.storyboard */,
-				9CA6225D27C5FFAD007BC986 /* Assets.xcassets */,
-				9CA6225F27C5FFAD007BC986 /* LaunchScreen.storyboard */,
-				9CA6226227C5FFAD007BC986 /* Info.plist */,
+				9CDC945F27CF1C5500D167A1 /* Startup */,
+				9CDC946127CF1C6B00D167A1 /* Controllers */,
+				9CDC945D27CF1C3F00D167A1 /* Views */,
+				9CDC945127CF1C1D00D167A1 /* Assets.xcassets */,
+				9CDC945627CF1C1D00D167A1 /* Info.plist */,
 			);
-			path = TriangleAreaCalculator;
+			path = UtilityConverter;
+			sourceTree = "<group>";
+		};
+		9CDC945D27CF1C3F00D167A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CDC946027CF1C5F00D167A1 /* ReusableKeyboard */,
+				9CDC944E27CF1C1D00D167A1 /* Main.storyboard */,
+				9CDC945327CF1C1D00D167A1 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CDC945F27CF1C5500D167A1 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				9CDC944827CF1C1D00D167A1 /* AppDelegate.swift */,
+				9CDC944A27CF1C1D00D167A1 /* SceneDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		9CDC946027CF1C5F00D167A1 /* ReusableKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CDC946227CF1D2000D167A1 /* ReusableView.swift */,
+				9CDC946427CF1D6D00D167A1 /* ReusableView.xib */,
+			);
+			path = ReusableKeyboard;
+			sourceTree = "<group>";
+		};
+		9CDC946127CF1C6B00D167A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CDC944C27CF1C1D00D167A1 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CA6225027C5FFAC007BC986 /* TriangleAreaCalculator */ = {
+		9CDC944427CF1C1D00D167A1 /* UtilityConverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CA6226527C5FFAD007BC986 /* Build configuration list for PBXNativeTarget "TriangleAreaCalculator" */;
+			buildConfigurationList = 9CDC945927CF1C1D00D167A1 /* Build configuration list for PBXNativeTarget "UtilityConverter" */;
 			buildPhases = (
-				9CA6224D27C5FFAC007BC986 /* Sources */,
-				9CA6224E27C5FFAC007BC986 /* Frameworks */,
-				9CA6224F27C5FFAC007BC986 /* Resources */,
+				9CDC944127CF1C1D00D167A1 /* Sources */,
+				9CDC944227CF1C1D00D167A1 /* Frameworks */,
+				9CDC944327CF1C1D00D167A1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TriangleAreaCalculator;
-			productName = TriangleAreaCalculator;
-			productReference = 9CA6225127C5FFAC007BC986 /* TriangleAreaCalculator.app */;
+			name = UtilityConverter;
+			productName = UtilityConverter;
+			productReference = 9CDC944527CF1C1D00D167A1 /* UtilityConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9CA6224927C5FFAC007BC986 /* Project object */ = {
+		9CDC943D27CF1C1D00D167A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					9CA6225027C5FFAC007BC986 = {
+					9CDC944427CF1C1D00D167A1 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 9CA6224C27C5FFAC007BC986 /* Build configuration list for PBXProject "TriangleAreaCalculator" */;
+			buildConfigurationList = 9CDC944027CF1C1D00D167A1 /* Build configuration list for PBXProject "UtilityConverter" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +148,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 9CA6224827C5FFAC007BC986;
-			productRefGroup = 9CA6225227C5FFAC007BC986 /* Products */;
+			mainGroup = 9CDC943C27CF1C1D00D167A1;
+			productRefGroup = 9CDC944627CF1C1D00D167A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CA6225027C5FFAC007BC986 /* TriangleAreaCalculator */,
+				9CDC944427CF1C1D00D167A1 /* UtilityConverter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9CA6224F27C5FFAC007BC986 /* Resources */ = {
+		9CDC944327CF1C1D00D167A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA6226127C5FFAD007BC986 /* LaunchScreen.storyboard in Resources */,
-				9CA6225E27C5FFAD007BC986 /* Assets.xcassets in Resources */,
-				9CA6225C27C5FFAC007BC986 /* Main.storyboard in Resources */,
+				9CDC945527CF1C1D00D167A1 /* LaunchScreen.storyboard in Resources */,
+				9CDC945227CF1C1D00D167A1 /* Assets.xcassets in Resources */,
+				9CDC945027CF1C1D00D167A1 /* Main.storyboard in Resources */,
+				9CDC946527CF1D6D00D167A1 /* ReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9CA6224D27C5FFAC007BC986 /* Sources */ = {
+		9CDC944127CF1C1D00D167A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA6225927C5FFAC007BC986 /* ViewController.swift in Sources */,
-				9CA6225527C5FFAC007BC986 /* AppDelegate.swift in Sources */,
-				9CA6225727C5FFAC007BC986 /* SceneDelegate.swift in Sources */,
+				9CDC944D27CF1C1D00D167A1 /* ViewController.swift in Sources */,
+				9CDC944927CF1C1D00D167A1 /* AppDelegate.swift in Sources */,
+				9CDC944B27CF1C1D00D167A1 /* SceneDelegate.swift in Sources */,
+				9CDC946327CF1D2000D167A1 /* ReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9CA6225A27C5FFAC007BC986 /* Main.storyboard */ = {
+		9CDC944E27CF1C1D00D167A1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CA6225B27C5FFAC007BC986 /* Base */,
+				9CDC944F27CF1C1D00D167A1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9CA6225F27C5FFAD007BC986 /* LaunchScreen.storyboard */ = {
+		9CDC945327CF1C1D00D167A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9CA6226027C5FFAD007BC986 /* Base */,
+				9CDC945427CF1C1D00D167A1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +206,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9CA6226327C5FFAD007BC986 /* Debug */ = {
+		9CDC945727CF1C1D00D167A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +267,7 @@
 			};
 			name = Debug;
 		};
-		9CA6226427C5FFAD007BC986 /* Release */ = {
+		9CDC945827CF1C1D00D167A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +322,7 @@
 			};
 			name = Release;
 		};
-		9CA6226627C5FFAD007BC986 /* Debug */ = {
+		9CDC945A27CF1C1D00D167A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TJXA4Y9997;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TriangleAreaCalculator/Info.plist;
+				INFOPLIST_FILE = UtilityConverter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinukapiyadigama.TriangleAreaCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinukapiyadigama.UtilityConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,7 +350,7 @@
 			};
 			name = Debug;
 		};
-		9CA6226727C5FFAD007BC986 /* Release */ = {
+		9CDC945B27CF1C1D00D167A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TJXA4Y9997;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TriangleAreaCalculator/Info.plist;
+				INFOPLIST_FILE = UtilityConverter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dinukapiyadigama.TriangleAreaCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinukapiyadigama.UtilityConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,25 +381,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CA6224C27C5FFAC007BC986 /* Build configuration list for PBXProject "TriangleAreaCalculator" */ = {
+		9CDC944027CF1C1D00D167A1 /* Build configuration list for PBXProject "UtilityConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CA6226327C5FFAD007BC986 /* Debug */,
-				9CA6226427C5FFAD007BC986 /* Release */,
+				9CDC945727CF1C1D00D167A1 /* Debug */,
+				9CDC945827CF1C1D00D167A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CA6226527C5FFAD007BC986 /* Build configuration list for PBXNativeTarget "TriangleAreaCalculator" */ = {
+		9CDC945927CF1C1D00D167A1 /* Build configuration list for PBXNativeTarget "UtilityConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CA6226627C5FFAD007BC986 /* Debug */,
-				9CA6226727C5FFAD007BC986 /* Release */,
+				9CDC945A27CF1C1D00D167A1 /* Debug */,
+				9CDC945B27CF1C1D00D167A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9CA6224927C5FFAC007BC986 /* Project object */;
+	rootObject = 9CDC943D27CF1C1D00D167A1 /* Project object */;
 }
