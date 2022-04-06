@@ -11,14 +11,14 @@ class PizzaModel{
     var pizzas: [Pizza] = []
     
     init() {
-        if let url = Bundle.main.url(forResource: "pizzas", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                pizzas = try JSONDecoder().decode([Pizza].self, from: data)
-            } catch {
-                print(error)
-            }
-        }
+//        if let url = Bundle.main.url(forResource: "pizzas", withExtension: "json") {
+//            do {
+//                let data = try Data(contentsOf: url)
+//                pizzas = try JSONDecoder().decode([Pizza].self, from: data)
+//            } catch {
+//                print(error)
+//            }
+//        }
     }
     
 //    func pizzas(forType type: PizzaType?) -> [Pizza] {

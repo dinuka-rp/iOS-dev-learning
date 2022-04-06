@@ -9,23 +9,31 @@ import SwiftUI
 
 struct NewPizzaView: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) var presentationMode // used to close the sheet
     
+    @Environment(\.managedObjectContext) var context
+    
+    @State private var name = ""
+    @State private var ingredients = ""
+    @State private var imageName = ""
+    @State private var thumbnaleName = ""
+    @State private var type = ""
+
     var body: some View {
 //        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         NavigationView {
             ZStack {
                 Color.gray.opacity(0.2)
                 VStack{
-                    TextField("Enter Pizza Name", text: .constant(""))
+                    TextField("Enter Pizza Name", text: $name)
                         .textFieldStyle(.roundedBorder)
                     // text area = text editor
-                    TextEditor(text: .constant("")).frame(height: 200)
-                    TextField("Enter Image Name", text: .constant(""))
+                    TextEditor(text: $ingredients).frame(height: 200)
+                    TextField("Enter Image Name", text: $imageName)
                         .textFieldStyle(.roundedBorder)
-                    TextField("Enter Pizza Thumbnail Name", text: .constant(""))
+                    TextField("Enter Pizza Thumbnail Name", text: $imageName)
                         .textFieldStyle(.roundedBorder)
-                    TextField("Enter Pizza Type", text: .constant(""))
+                    TextField("Enter Pizza Type", text: $type)
                         .textFieldStyle(.roundedBorder)
                     Spacer()
                 }
@@ -38,6 +46,17 @@ struct NewPizzaView: View {
             .toolbar {
                 ToolbarItem{
                     Button {
+                        let pizza = Pizza(context: context)
+                        pizza.name = name
+                        pizza.ingredients = ingredients
+                        pizza.imageName = imageName
+                        pizza.thumbnailName = imageName // TODO: change this to thumbnailName
+                        pizza.type = type
+
+                        try? context.save()
+                        
+                        print(pizza)
+                        
                         presentationMode.wrappedValue.dismiss()
                     } label:{
                         Text("Save")

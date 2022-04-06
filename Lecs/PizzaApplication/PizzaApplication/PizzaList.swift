@@ -9,11 +9,16 @@ import SwiftUI
 
 struct PizzaList: View {
     
+    @Environment(\.managedObjectContext) var context
+
+    
 //    @State var string = "Did Not press button"
 //    var string1 = "Hello"
     
     @State private var selection = 0 // State var for the Segmented Picker
     @State private var isSheetShowing = false // State variable representing if the action sheet is open/ not
+    
+    @FetchRequest(entity: Pizza.entity(), sortDescriptors: []) var pizzas: FetchedResults<Pizza>
     
     let pizzaModel = PizzaModel()
 
@@ -50,17 +55,26 @@ struct PizzaList: View {
                     Text("Veggie🥦").tag(2)
                 }.pickerStyle(.segmented)
                 
-                List(pizzaModel.pizzas, id: \.name){
+                List(pizzas, id: \.name){
                     pizza in
                     NavigationLink{
 //                        Text(pizza.name)
                         PizzaDetailView(pizza: pizza)
                     } label:{
                         HStack{
-                            Image(pizza.imageName).resizable().frame(width: 100, height: 100)
-                            Text(pizza.name)
+                            Image(pizza.imageName ?? "").resizable().frame(width: 100, height: 100)
+                            Text(pizza.name ?? "")
         //                        .foregroundColor(<#Color?#>)
         //                        .backgroundColor()
+                        }
+                    }
+                    .swipeActions(edge: .trailing, allowsFullSwipe: false){
+                        Button{
+                            print("Deleting Item")
+                            context.delete(pizza)
+                            try? context.save()
+                        } label:{
+                            Label("Delete", systemImage: "trash")
                         }
                     }
                 }

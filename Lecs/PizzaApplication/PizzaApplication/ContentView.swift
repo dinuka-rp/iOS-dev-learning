@@ -17,7 +17,9 @@ struct ContentView: View {
 //                    Text("Pizza List")
                     Label("Pizza List", systemImage: "list.dash")
                 }
-            Text("Favorites")
+            
+//            Text("Favorites")
+            FavouritesList()
                 .tabItem {
 //                    Text("Favs")
                     Label("Favourites", systemImage: "star.fill")
