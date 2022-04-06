@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Conversions-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UtilityConverter" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNV-vq-vHV">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SNV-vq-vHV">
                                                 <rect key="frame" x="58.5" y="0.0" width="315.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -131,7 +131,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ss-PN-lQS">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ss-PN-lQS">
                                                 <rect key="frame" x="57" y="0.0" width="317" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -152,8 +152,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ls-br-TcR" secondAttribute="trailing" id="v17-44-vNI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Conversions" image="slider.vertical.3" catalog="system" id="D3W-Lb-VaE"/>
-                    <navigationItem key="navigationItem" id="SIc-O5-Lut"/>
+                    <navigationItem key="navigationItem" id="SIc-O5-Lut">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="vos-u1-Xf0"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="keyboard" destination="8ls-br-TcR" id="Dew-1D-zBh"/>
                         <outletCollection property="textFields" destination="SNV-vq-vHV" collectionClass="NSMutableArray" id="P3a-mb-Ifm"/>
@@ -166,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1868.1159420289857" y="78.348214285714278"/>
+            <point key="canvasLocation" x="2778.2608695652175" y="78.348214285714278"/>
         </scene>
         <!--History-->
         <scene sceneID="X9V-bf-L6p">
@@ -287,11 +288,12 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Hzg-bN-95q"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hna-Ve-ehl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="exJ-rw-QLw"/>
+                        <segue destination="VD2-fN-09S" kind="relationship" relationship="viewControllers" id="exJ-rw-QLw"/>
                         <segue destination="nOR-Vm-Nbx" kind="relationship" relationship="viewControllers" id="0he-na-hox"/>
                         <segue destination="7vC-Zu-God" kind="relationship" relationship="viewControllers" id="XJ5-SD-x3E"/>
                     </connections>
@@ -300,9 +302,28 @@
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="78.348214285714278"/>
         </scene>
+        <!--Conversions-->
+        <scene sceneID="h5s-TR-uCL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VD2-fN-09S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Conversions" image="slider.vertical.3" catalog="system" id="D3W-Lb-VaE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j0T-Tu-ufU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="akl-73-sB5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V84-vP-9pa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868.1159420289857" y="78.348214285714278"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DOk-AV-Upr"/>
+        <segue reference="hHR-T0-uz4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
