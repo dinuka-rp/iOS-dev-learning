@@ -11,12 +11,21 @@ struct FavouritesList: View {
     @FetchRequest(entity: Pizza.entity(), sortDescriptors: [], predicate: NSPredicate(format: "isFavourite = %d", true)) var favourites: FetchedResults<Pizza>
     
     var body: some View {
-        List(favourites){
-            favourite in
-                HStack{
-                    Image(favourite.imageName ?? "").resizable().frame(width: 100, height: 100)
-                    Text(favourite.name ?? "")
-                }
+        NavigationView {
+            VStack{
+                List(favourites){
+                    favourite in
+                    NavigationLink{
+        //                        Text(pizza.name)
+                        PizzaDetailView(pizza: favourite)
+                    } label:{
+                        HStack{
+                            Image(favourite.thumbnailName ?? "").resizable().frame(width: 100, height: 100)
+                            Text(favourite.name ?? "")
+                        }
+                    }
+                }.listStyle(PlainListStyle())
+            }.navigationBarTitle("Favourites", displayMode: .inline)
         }
     }
 }

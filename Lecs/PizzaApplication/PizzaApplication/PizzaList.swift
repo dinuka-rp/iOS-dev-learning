@@ -62,7 +62,7 @@ struct PizzaList: View {
                         PizzaDetailView(pizza: pizza)
                     } label:{
                         HStack{
-                            Image(pizza.imageName ?? "").resizable().frame(width: 100, height: 100)
+                            Image(pizza.thumbnailName ?? "").resizable().frame(width: 100, height: 100)
                             Text(pizza.name ?? "")
         //                        .foregroundColor(<#Color?#>)
         //                        .backgroundColor()
@@ -97,6 +97,16 @@ struct PizzaList: View {
             }
         }
     }
+    
+//    var filteredPizzaByTypes : [Pizza]{
+//        switch filter {
+//        case 0:
+//            return pizzas
+//        case 1:
+//            return pizzas.filter{$0.type = "meat"}
+//        case 2:
+//            return pizzas.filter{$0.type = "vegetarian"}
+//    }
 }
 
 struct PizzaList_Previews: PreviewProvider {

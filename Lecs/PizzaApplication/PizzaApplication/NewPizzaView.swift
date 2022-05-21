@@ -16,7 +16,7 @@ struct NewPizzaView: View {
     @State private var name = ""
     @State private var ingredients = ""
     @State private var imageName = ""
-    @State private var thumbnaleName = ""
+    @State private var thumbnailName = ""
     @State private var type = ""
 
     var body: some View {
@@ -31,7 +31,7 @@ struct NewPizzaView: View {
                     TextEditor(text: $ingredients).frame(height: 200)
                     TextField("Enter Image Name", text: $imageName)
                         .textFieldStyle(.roundedBorder)
-                    TextField("Enter Pizza Thumbnail Name", text: $imageName)
+                    TextField("Enter Pizza Thumbnail Name", text: $thumbnailName)
                         .textFieldStyle(.roundedBorder)
                     TextField("Enter Pizza Type", text: $type)
                         .textFieldStyle(.roundedBorder)
@@ -50,7 +50,7 @@ struct NewPizzaView: View {
                         pizza.name = name
                         pizza.ingredients = ingredients
                         pizza.imageName = imageName
-                        pizza.thumbnailName = imageName // TODO: change this to thumbnailName
+                        pizza.thumbnailName = thumbnailName
                         pizza.type = type
 
                         try? context.save()

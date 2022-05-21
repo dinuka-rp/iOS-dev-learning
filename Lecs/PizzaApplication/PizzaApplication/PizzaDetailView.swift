@@ -28,14 +28,15 @@ struct PizzaDetailView: View {
                     .resizable()
                     .frame(width: reader.size.width, height:200)
                 Text(pizza.name ?? "").padding()
-                
+                Text(pizza.ingredients ?? "").padding()
+
                 Button{
                     isFavourite.toggle()
                     pizza.isFavourite = isFavourite
                     try? context.save()
                     print(pizza)
                 } label: {
-                    Text(isFavourite ? "Unfavourite" : "Make Favourite")
+                    Text(isFavourite ? "Unfavourite" : "Make Favourite ♡")
                 }
 //                .disabled(pizza.isFavourite)
                 .frame(maxWidth: .infinity)
